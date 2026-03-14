@@ -208,8 +208,14 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-72 {
+    width: calc(var(--spacing) * 72);
+  }
   .w-80 {
     width: calc(var(--spacing) * 80);
+  }
+  .w-\[314px\] {
+    width: 314px;
   }
   .max-w-80 {
     max-width: calc(var(--spacing) * 80);
@@ -225,6 +231,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -309,6 +318,11 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .md\:w-80 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 80);
+    }
   }
   .md\:max-w-\[33\.75em\] {
     @media (width >= 48rem) {
